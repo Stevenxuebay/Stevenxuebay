@@ -369,14 +369,25 @@
         margin: 0.35in;
       }
 
+      html,
       body {
-        font-size: 10px;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        overflow: hidden;
+      }
+
+      body {
+        font-size: 9px;
+        line-height: 1.2;
+        zoom: 0.82;
         background: #fff;
       }
 
       .app-shell {
         width: 100%;
         margin: 0;
+        gap: 6px;
       }
 
       .toolbar,
@@ -391,6 +402,18 @@
         border-radius: 0;
         box-shadow: none;
         padding: 0;
+      }
+
+      .invoice-header {
+        margin-bottom: 8px;
+        padding-bottom: 8px;
+      }
+
+      .section-grid,
+      .closing-grid {
+        gap: 6px;
+        margin-top: 6px;
+        margin-bottom: 6px;
       }
 
       input,
@@ -426,7 +449,22 @@
 
       th,
       td {
-        padding: 4px 6px;
+        padding: 3px 4px;
+      }
+
+      .card {
+        padding: 6px;
+      }
+
+      .field {
+        gap: 2px;
+      }
+
+      input,
+      select,
+      textarea {
+        padding-top: 1px;
+        padding-bottom: 1px;
       }
     }
   </style>
